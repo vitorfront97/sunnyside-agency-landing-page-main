@@ -38,16 +38,16 @@ export default function Footer() {
         </li>
       </ul>
       <div className="mt-12 flex gap-8">
-        <a href="#">
+        <a href="#" aria-label="Facebook">
           <FaFacebookSquare className="text-this-green-500 text-3xl hover:text-this-white" />
         </a>
-        <a href="#">
+        <a href="#" aria-label="Instagram">
           <FaInstagram className="text-this-green-500 text-3xl hover:text-this-white" />
         </a>
-        <a href="#">
+        <a href="#" aria-label="Twitter">
           <FaTwitter className="text-this-green-500 text-3xl hover:text-this-white" />
         </a>
-        <a href="#">
+        <a href="#" aria-label="Pinterest">
           <FaPinterest className="text-this-green-500 text-3xl hover:text-this-white" />
         </a>
       </div>
