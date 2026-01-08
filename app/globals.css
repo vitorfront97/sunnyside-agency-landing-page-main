@@ -1,26 +1,48 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-this-red-400: var(--red-400);
+  --color-this-yellow-500: var(--yellow-500);
+  --color-this-green-400: var(--green-400);
+  --color-this-green-800: var(--green-800);
+  --color-this-blue-800: var(--blue-800);
+  --color-this-green-500: var(--green-500);
+  --color-this-grey-950: var(--grey-950);
+  --color-this-grey-600: var(--grey-600);
+  --color-this-grey-550: var(--grey-550);
+  --color-this-grey-400: var(--grey-400);
+  --color-this-white: var(--white);
+  --text-this-h1: var(--h1);
+  --text-this-h2: var(--h2);
+  --text-this-h3: var(--h3);
+  --text-this-h4: var(--h4);
+  --text-this-h5: var(--h5);
+  --text-this-h6: var(--h6);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --red-400: hsl(7, 99%, 70%);
+    --yellow-500: hsl(51, 100%, 49%);
+    --green-800: hsl(167, 40%, 24%);
+    --blue-800: hsl(198, 62%, 26%);
+    --green-400: #91D3C6;
+    --green-500: hsl(167, 34%, 41%);
+    --grey-950: hsl(212, 27%, 19%);
+    --grey-600: hsl(213, 9%, 39%);
+    --grey-550: hsl(232, 10%, 55%);
+    --grey-400: hsl(210, 4%, 67%);
+    --white: hsl(0, 100%, 100%);
+    --h1: clamp(2.2rem, 4vw, 3.5rem);
+    --h2: clamp(1.75rem, 3.2vw, 2.8rem);
+    --h3: clamp(1.4rem, 2.6vw, 2.25rem);
+    --h4: clamp(1.15rem, 2vw, 1.8rem);
+    --h5: clamp(1rem, 1.6vw, 1.45rem);
+    --h6: clamp(0.9rem, 1.3vw, 1.15rem);
   }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
+  font-size: 18px;
   font-family: Arial, Helvetica, sans-serif;
 }
